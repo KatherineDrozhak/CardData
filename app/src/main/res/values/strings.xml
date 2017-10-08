@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">CardData</string>
+    <string name="posts_name">Posts</string>
+    <string name="button_confirm">Подтвердить</string>
+    <string name="comments_name">Comments</string>
+    <string name="result_text">Result</string>
+    <string name="users_name">Users</string>
+    <string name="photo_name">Photo</string>
+    <string name="todo_name">Todo</string>
+    <string name="created_by">Created by</string>
+    <string name="name">Katherine Drozhak</string>
+    <string name="email">k.chubova@gmail.com</string>
+    <string name="phone">+7(978)0078984</string>
+    <string name="page_one">Page 1</string>
+    <string name="page_two">Page 2</string>
+    <string name="post_id_text">"PostId: "</string>
+    <string name="id_text">"Id: "</string>
+    <string name="name_text">"Name: "</string>
+    <string name="email_text">"Email: </string>
+    <string name="body_text">"Body: </string>
+    <string name="user_id_text">"UserId: </string>
+    <string name="title_text">"Title: "</string>
+    <string name="completed_text">"Completed: "</string>
+    <string name="error_title">Error</string>
+    <string name="error_message">Try again later</string>
+    <string name="ok_button">Ok</string>
+    <string name="enter_value_for_post">Enter 1 - 100</string>
+    <string name="enter_value_for_comment">Enter 1 - 500</string>
+</resources>

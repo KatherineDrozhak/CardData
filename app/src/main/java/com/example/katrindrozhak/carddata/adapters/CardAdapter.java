@@ -8,16 +8,16 @@ import android.view.ViewGroup;
 
 import com.example.katrindrozhak.carddata.OnShowDetailsListener;
 import com.example.katrindrozhak.carddata.R;
-import com.example.katrindrozhak.carddata.viewholders.CommentViewHolder;
-import com.example.katrindrozhak.carddata.viewholders.PhotoViewHolder;
-import com.example.katrindrozhak.carddata.viewholders.PostViewHolder;
-import com.example.katrindrozhak.carddata.viewholders.TodoViewHolder;
-import com.example.katrindrozhak.carddata.viewholders.UserViewHolder;
 import com.example.katrindrozhak.carddata.models.Comment;
 import com.example.katrindrozhak.carddata.models.Photo;
 import com.example.katrindrozhak.carddata.models.Post;
 import com.example.katrindrozhak.carddata.models.Todo;
 import com.example.katrindrozhak.carddata.models.User;
+import com.example.katrindrozhak.carddata.viewholders.CommentViewHolder;
+import com.example.katrindrozhak.carddata.viewholders.PhotoViewHolder;
+import com.example.katrindrozhak.carddata.viewholders.PostViewHolder;
+import com.example.katrindrozhak.carddata.viewholders.TodoViewHolder;
+import com.example.katrindrozhak.carddata.viewholders.UserViewHolder;
 
 import java.util.List;
 
@@ -77,7 +77,7 @@ public class CardAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
                     }
                 });
                 if (post != null) {
-                    postViewHolder.showResponse(context, post);
+                    postViewHolder.show(context, post);
                 }
                 break;
             case 1:
@@ -91,26 +91,26 @@ public class CardAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
                 });
 
                 if (comment != null) {
-                    commentViewHolder.showCommentResponse(context, comment);
+                    commentViewHolder.show(context, comment);
                 }
                 break;
 
             case 2:
                 final PhotoViewHolder photoViewHolder = (PhotoViewHolder) holder;
                 if (photo != null) {
-                    photoViewHolder.showImage(context, photo);
+                    photoViewHolder.show(context, photo);
                 }
                 break;
             case 3:
                 final TodoViewHolder todoViewHolder = (TodoViewHolder) holder;
                 if (todo != null) {
-                    todoViewHolder.showResponseTodo(context, todo);
+                    todoViewHolder.show(context, todo);
                 }
                 break;
             case 4:
                 final UserViewHolder userVIewHolder = (UserViewHolder) holder;
                 if (users != null) {
-                    userVIewHolder.showResult(context, users);
+                    userVIewHolder.show(context, users);
                 }
                 break;
         }
